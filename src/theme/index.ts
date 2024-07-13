@@ -21,8 +21,10 @@ export const THEME = extendTheme({
     },
   },
   fonts: {
-    heading: 'RedHatText_700Bold',
+    bold: 'RedHatText_700Bold',
     body: 'RedHatText_400Regular',
+    displayBody: 'RedHatDisplay_400Regular',
+    displayHeading: 'RedHatDisplay_700Bold',
   },
   fontSizes: {
     xs: 12,
