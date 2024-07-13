@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { StatusBar, Text, View } from 'react-native';
 import {
   useFonts,
   RedHatText_400Regular,
@@ -14,6 +13,11 @@ export default function App() {
 
   return (
     <View>
+      <StatusBar
+        barStyle='light-content'
+        backgroundColor='transparent'
+        translucent
+      />
       {fontsLoaded ? <Text>Open up App.tsx to start working on your app!</Text> : <View />}
     </View>
   );
