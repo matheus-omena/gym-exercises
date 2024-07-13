@@ -5,6 +5,8 @@ import {
   RedHatText_700Bold,
 } from '@expo-google-fonts/red-hat-text';
 import { NativeBaseProvider } from 'native-base';
+import { Loading } from '@components/loading';
+import { THEME } from 'src/theme';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -13,13 +15,13 @@ export default function App() {
   });
 
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider theme={THEME}>
       <StatusBar
         barStyle='light-content'
         backgroundColor='transparent'
         translucent
       />
-      {fontsLoaded ? <View /> : <View />}
+      {fontsLoaded ? <View /> : <Loading />}
     </NativeBaseProvider>
   );
 }
