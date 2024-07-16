@@ -11,6 +11,7 @@ import {
 import { NativeBaseProvider } from 'native-base';
 import { Loading } from '@components/loading';
 import { THEME } from 'src/theme';
+import { AppRoutes } from '@routes/app.routes';
 import { Routes } from '@routes/index';
 
 export default function App() {
